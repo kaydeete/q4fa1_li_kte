@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GE1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Sign Up-->
+    <form onsubmit="return info();">
+        <fieldset form="signup">
+            <legend>Sign Up Here!</legend>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" onblur="blurT(this)" onfocus="focusT(this)"></br></br>
+
+            <label for="username">Preferred Username</label>
+            <input type="text" id="username" onblur="blurT()" onfocus="focusT(this)"></br></br>
+
+            <label for="gender">Gender:</label><br>
+            <select id="gender" name="gender">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Prefer not to mention">Prefer not to mention</option>
+            </select></br></br>
+
+            <label for="password">Password:</label>
+            <input type= "password" id="password" onblur="blurT()" onfocus="focusT(this)"></br></br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" onblur="blurT()" onfocus="focusT(this)" required></br></br>
+            
+            <label for="address">Address:</label>
+            <input type= "tArea" name="address" id="address" onblur="blurT()" onfocus="focusT(this)"></br></br>
+
+            <label for="infouser">About You:</label> </br>
+            <textarea name="infouser" id="infouser" cols="30" rows="10" onblur="blurT()" onfocus="focusT(this)"></textarea> </br></br>
+
+            <button type="submit">Submit</button>
+            <button type="reset" onclick="return reset();">Restart</button>
+        </fieldset>
+    </form>
+
+    <!--Print Info-->
+    <div>
+        <p id="outputdata"></p>
+    </div>
+
+    <script text="javascript" src="script.js"></script>
+</body>
+</html>
