@@ -41,15 +41,11 @@ function focusT(element)
 }
 
 function reset() {
-    document.getElementById("signup-form").reset();
-    var inputE = document.getElementsByTagName("input");
-    var textE = document.getElementsByTagName("textarea");
-    for (var i = 0; i < inputE.length; i++) {
-        inputE[i].style.borderColor = "initial";
-    }
-    for (var i = 0; i < textE.length; i++) {
-        textE[i].style.borderColor = "initial";
-    }
-    document.getElementById("outputdata").innerHTML = '';
-    return false;
+    document.getElementById("outputdata").innerHTML = "";
+    document.getElementById("name").style.borderColor = "black";
+    document.getElementById("username").style.borderColor = "black";
+    document.getElementById("password").style.borderColor = "black";
+    document.getElementById("email").style.borderColor = "black";
+    document.getElementById("address").style.borderColor = "black";
+    document.getElementById("infouser").style.borderColor = "black";
 }
