@@ -9,7 +9,7 @@
 <body>
 
     <!--Sign Up-->
-    <form onsubmit="return info();">
+    <form id = "signup-form" onsubmit="return info();">
         <fieldset form="signup">
             <legend>Sign Up Here!</legend>
             
@@ -17,7 +17,7 @@
             <input type="text" id="name" onblur="blurT(this)" onfocus="focusT(this)"></br></br>
 
             <label for="username">Preferred Username</label>
-            <input type="text" id="username" onblur="blurT()" onfocus="focusT(this)"></br></br>
+            <input type="text" id="username" onblur="blurT(this)" onfocus="focusT(this)"></br></br>
 
             <label for="gender">Gender:</label><br>
             <select id="gender" name="gender">
@@ -27,19 +27,19 @@
             </select></br></br>
 
             <label for="password">Password:</label>
-            <input type= "password" id="password" onblur="blurT()" onfocus="focusT(this)"></br></br>
+            <input type= "password" id="password" onblur="blurT(this)" onfocus="focusT(this)"></br></br>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" onblur="blurT()" onfocus="focusT(this)" required></br></br>
+            <input type="email" id="email" name="email" onblur="blurT(this)" onfocus="focusT(this)" required></br></br>
             
             <label for="address">Address:</label>
-            <input type= "tArea" name="address" id="address" onblur="blurT()" onfocus="focusT(this)"></br></br>
+            <input type= "tArea" name="address" id="address" onblur="blurT(this)" onfocus="focusT(this)"></br></br>
 
             <label for="infouser">About You:</label> </br>
-            <textarea name="infouser" id="infouser" cols="30" rows="10" onblur="blurT()" onfocus="focusT(this)"></textarea> </br></br>
+            <textarea name="infouser" id="infouser" cols="30" rows="10" onblur="blurT(this)" onfocus="focusT(this)"></textarea> </br></br>
 
             <button type="submit">Submit</button>
-            <button type="reset" onclick="return reset();">Restart</button>
+            <button type="reset" onclick="reset();">Restart</button>
         </fieldset>
     </form>
 

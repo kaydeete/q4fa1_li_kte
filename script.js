@@ -22,7 +22,7 @@ function info()
     return false;
 }
 
-function blurT()
+function blurT(element)
 {
     var inputE = document.getElementsByTagName("input");
 
@@ -40,16 +40,15 @@ function focusT(element)
     element.style.borderColor = "green";
 }
 
-function reset()
-{
-    document.getElementById("signup").reset();
+function reset() {
+    document.getElementById("signup-form").reset();
     var inputE = document.getElementsByTagName("input");
     var textE = document.getElementsByTagName("textarea");
     for (var i = 0; i < inputE.length; i++) {
-        inputE[i].style.borderColor = "black";
+        inputE[i].style.borderColor = "initial";
     }
     for (var i = 0; i < textE.length; i++) {
-        textE[i].style.borderColor = "black";
+        textE[i].style.borderColor = "initial";
     }
     document.getElementById("outputdata").innerHTML = '';
     return false;
