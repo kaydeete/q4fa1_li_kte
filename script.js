@@ -22,7 +22,7 @@ function info()
     return false;
 }
 
-function blurT(element)
+function blurT()
 {
     var inputE = document.getElementsByTagName("input");
 
@@ -41,11 +41,18 @@ function focusT(element)
 }
 
 function reset() {
-    document.getElementById("outputdata").innerHTML = "";
-    document.getElementById("name").style.borderColor = "black";
-    document.getElementById("username").style.borderColor = "black";
-    document.getElementById("password").style.borderColor = "black";
-    document.getElementById("email").style.borderColor = "black";
-    document.getElementById("address").style.borderColor = "black";
-    document.getElementById("infouser").style.borderColor = "black";
+    document.getElementById("outputdata").innerHTML = '';
+
+    var inputE = document.getElementsByTagName("input");
+    var textarea = document.getElementsByTagName("textarea");
+
+    for (var i = 0; i < inputE.length; i++) {
+        inputE[i].removeAttribute('style');
+    }
+
+    for (var i = 0; i < textarea.length; i++) {
+        textarea[i].removeAttribute('style');
+    }
+
+    return false; // Prevent form submission
 }
